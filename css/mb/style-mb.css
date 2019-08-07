@@ -21,6 +21,14 @@ a {
     cursor: pointer;
 }
 
+h1 {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 h2 {
     text-align: center;
 }
