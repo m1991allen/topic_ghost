@@ -5,7 +5,6 @@
     position: relative;
     padding: 0px;
     margin: 0px;
-    transition: .8s;
 }
 
 html, body {
@@ -26,6 +25,29 @@ a {
     h2 {
         font-size: 1.1em;
     }
+}
+
+/* fb social */
+
+#social {
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 30px;
+    z-index: 10000;
+    position: fixed;
+    background-color: #3b5998;
+    border-radius: 50px;
+    border: 1px solid #3b5998;
+    box-shadow: 4px 5px 4px #070c0e;
+    cursor: pointer;
+}
+
+#social i {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    color: white;
 }
 
 /* ghost mouse */
@@ -142,6 +164,8 @@ a {
 }
 
 /* end taiwan map */
+
+/* ghost map */
 
 .area {
     color: white;
@@ -286,6 +310,8 @@ a {
 .set {
     position: absolute;
 }
+
+/* end ghost map  */
 
 /* rain */
 
