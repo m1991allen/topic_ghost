@@ -1,7 +1,12 @@
 @charset "UTF-8";
+/* @font-face {
+    font-family: 'g_コミック古印体フォント';
+    src: url('../resource/g_comickoin_freeB.ttf');
+    src: url('../resource/g_comickoin_freeR.ttf');
+} */
+
 * {
-    /* box-sizing: border-box; */
-    font-family: 'Microsoft JhengHei';
+    font-family: 'Helvetica', 'Microsoft JhengHei';
     position: relative;
     padding: 0px;
     margin: 0px;
@@ -201,12 +206,12 @@ a {
 
 #area1 {
     top: 4%;
-    left: 70%;
+    left: 66%;
 }
 
 #area2 {
     top: 10%;
-    left: 63%;
+    left: 60%;
 }
 
 #area3 {
@@ -216,7 +221,7 @@ a {
 
 #area4 {
     top: 34%;
-    left: 41%;
+    left: 45%;
 }
 
 #area5 {
@@ -309,6 +314,9 @@ a {
 
 .set {
     position: absolute;
+    transition: .3s;
+    -webkit-filter: drop-shadow(0px 0px 26px rgba(45, 67, 165, 0.8));
+    filter: drop-shadow(0px 0px 26px rgba(45, 67, 165, 0.8));
 }
 
 /* end ghost map  */
@@ -400,4 +408,82 @@ canvas {
     .area .set {
         display: none;
     }
+}
+
+#scale1 {
+    animation: scale 1.3s infinite;
+}
+
+#scale2 {
+    animation: scale 2.2s infinite;
+}
+
+#scale3 {
+    animation: scale 1s infinite;
+}
+
+#scale4 {
+    animation: scale 2.6s infinite;
+}
+
+#scale5 {
+    animation: scale 2s infinite;
+}
+
+#scale6 {
+    animation: scale 3.2s infinite;
+}
+
+#scale7 {
+    animation: scale 1.5s infinite;
+}
+
+#scale8 {
+    animation: scale 3s infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    background-color: black;
+}
+
+.layout {
+    color: white;
+    width: 1000px;
+    margin: auto;
+    padding: 5%;
+}
+
+.layout .layout_in {
+    display: flex;
+}
+
+@media screen and (max-width:1000px) {
+    .layout .layout_in {
+        width: 100%
+    }
+}
+
+.layout .layout_in .logo {
+    width: 45px;
+    padding-right: 10px;
+}
+
+.layout .layout_in .editor {
+    list-style: none;
+}
+
+.layout .fb-search {
+    width: 250px;
 }

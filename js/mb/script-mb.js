@@ -1,23 +1,5 @@
 $(document).ready(function () {
 
-    //initialising fullpage.js in the jQuery way
-    $('#fullpage').fullpage({
-        sectionsColor: ['black', 'black', 'black', 'black', 'black', 'black', 'black', 'black'],
-        navigation: true,
-        slidesNavigation: true,
-    });
-
-    // calling fullpage.js methods using jQuery
-    $('#moveSectionUp').click(function (e) {
-        e.preventDefault();
-        $.fn.fullpage.moveSectionUp();
-    });
-
-    $('#moveSectionDown').click(function (e) {
-        e.preventDefault();
-        $.fn.fullpage.moveSectionDown();
-    });
-
     //map btn
     $('#btn_1').click(function () {
         $('#area1').show('slow');
@@ -45,8 +27,8 @@ $(document).ready(function () {
     });
 
     //close
-    $('.area').click(function () {
-        $('#area1,#area2,#area3,#area4,#area5,#area6,#area7,#area8').hide();
+    $('.close').click(function () {
+        $('.area').hide();
     })
 
 });
