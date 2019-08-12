@@ -1,9 +1,8 @@
 @charset "UTF-8";
-/* @font-face {
-    font-family: 'g_コミック古印体フォント';
-    src: url('../resource/g_comickoin_freeB.ttf');
-    src: url('../resource/g_comickoin_freeR.ttf');
-} */
+@font-face {
+    font-family: 'onryou';
+    src: url('../resource/onryou.TTF');
+}
 
 * {
     font-family: 'Helvetica', 'Microsoft JhengHei';
@@ -343,12 +342,6 @@ canvas {
     padding: 5% 0;
 }
 
-@media screen and (max-width:768px) {
-    .map {
-        width: 100%;
-    }
-}
-
 @-webkit-keyframes thunder-bg {
     0% {
         background-color: #1f1f33;
@@ -473,12 +466,6 @@ footer {
     margin: auto;
 }
 
-@media screen and (max-width:1000px) {
-    .layout .layout_in {
-        width: 100%
-    }
-}
-
 .layout .layout_in .logo {
     width: 45px;
     padding-right: 10px;
@@ -493,32 +480,53 @@ footer {
     margin: auto;
 }
 
+@media screen and (max-width:1000px) {
+    .layout {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width:560px) {}
+
 /* typein */
 
 #centeralign h1 {
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1pt;
-    font-size: 30pt;
-    margin-bottom: 15px;
+    font-family: 'onryou';
+    font-size: 3.6em;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+    color: red;
 }
 
 #centeralign p {
-    text-align: left;
-    margin: 0;
+    text-align: center;
+    margin: auto;
     text-transform: lowercase;
-    font-size: 10pt;
+    font-family: 'onryou';
     font-weight: 900;
-    width: 50%;
+    font-size: 1.8em;
+    letter-spacing: 8px;
+    line-height: 40px;
+    width: 100%;
     display: none;
+    padding: 0 5%;
+    box-sizing: border-box;
+    color: red;
 }
 
 #table {
-    display: table;
     width: 100%;
-    height: 100%;
-    background-color: #e5e5e5;
+    color: white;
+    padding-top: 13%;
 }
 
-#centeralign {
-    display: table-cell;
-    vertical-align: middle;
+.title {
+    background-image: url('../img/title_bg.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
