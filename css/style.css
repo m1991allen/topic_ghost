@@ -329,17 +329,17 @@ canvas {
     width: 100%;
 }
 
-@media screen and (max-width:768px) {
-    canvas {
-        height: 100vh;
-    }
-}
-
 .map {
     width: 1300px;
     display: flex;
     margin: auto;
     padding: 5% 0;
+}
+
+@media screen and (max-width:768px) {
+    .map {
+        width: 100%;
+    }
 }
 
 @-webkit-keyframes thunder-bg {
