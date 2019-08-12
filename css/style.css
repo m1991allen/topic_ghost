@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @font-face {
-    font-family: 'onryou';
+    font-family: 'onryou', 'DFGuYinMedium-B5';
     src: url('../resource/onryou.TTF');
+    src: url('../resource/古印體.TTC');
 }
 
 * {
@@ -138,22 +139,6 @@ a {
 }
 
 /* end ghost mouse */
-
-/* layout container */
-
-/* .container {
-    width: 1300px;
-    margin: auto;
-    padding: 3% 0;
-} */
-
-@media screen and (max-width:1300px) {
-    .container {
-        width: 100%
-    }
-}
-
-/* -- end layout container -- */
 
 /* taiwan map */
 
@@ -495,25 +480,26 @@ footer {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1pt;
-    font-family: 'onryou';
+    font-family: 'DFGuYinMedium-B5';
     font-size: 3.6em;
     letter-spacing: 10px;
     margin-bottom: 30px;
     color: red;
+    text-shadow: -5px 4px 6px #300000, 4px 6px 1px #400000, 4px 2px 1px #500000, 7px 7px 1px #3a0303;
 }
 
 #centeralign p {
     text-align: center;
     margin: auto;
     text-transform: lowercase;
-    font-family: 'onryou';
+    font-family: 'DFGuYinMedium-B5';
     font-weight: 900;
     font-size: 1.8em;
     letter-spacing: 8px;
     line-height: 40px;
     width: 100%;
     display: none;
-    padding: 0 5%;
+    padding: 5px 5%;
     box-sizing: border-box;
     color: red;
 }

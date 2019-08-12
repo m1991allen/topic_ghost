@@ -298,17 +298,22 @@ function typeEffect(element, speed) {
 
 
 // application
-var speed = 300;
+var speed = 75;
 var h1 = document.querySelector('h1');
 var p = document.querySelector('p');
 var delay = h1.innerHTML.length * speed + speed;
-
+var pAll = document.querySelectorAll('p');
+var pDelay = 0;
 // type affect to header
 typeEffect(h1, speed);
 
-
 // type affect to body
 setTimeout(function () {
-    p.style.display = "inline-block";
-    typeEffect(p, speed);
+    [].forEach.call(pAll, function (p) {
+        setTimeout(function () {
+            p.style.display = "inline-block";
+            typeEffect(p, speed);
+        }, pDelay);
+        pDelay = pDelay + p.innerHTML.length * speed + speed;
+    });
 }, delay);
