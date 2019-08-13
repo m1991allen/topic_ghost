@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@import url('../../fonts/TAK00BP.woff');
+@font-face {
+    font-family: 'gooin';
+    src: url('../../fonts/TAK00BP.TTF') format('truetype');
+    src: url('../../fonts/TAK00BP.woff') format('woff');
+    unicode-range: U+731B, U+9B3C, U+5728, U+9694, U+58C1, U+8FB2, U+66C6, U+4E03, U+6708, U+5728, U+53F0, U+7063, U+4E5F, U+7A31, U+4F5C, U+300C, U+9B3C, U+6708, U+300D, U+4E0D, U+5C11, U+4EBA, U+6703, U+8D81, U+6B64, U+6642, U+5230, U+9B3C, U+5C4B, U+63A2, U+96AA, U+6311, U+6230, U+7981, U+5FCC, U+6C11, U+8996, U+65B0, U+805E, U+7279, U+5730, U+6574, U+7406, U+5168, U+53F0, U+516B, U+5927, U+9748, U+7570, U+9B3C, U+5C4B, U+8B93, U+5927, U+81BD, U+7684, U+6C11, U+773E, U+524D, U+5F80, U+8A66, U+81BD;
+}
+
 * {
     font-family: 'Helvetica', 'Microsoft JhengHei';
     position: relative;
@@ -312,7 +320,7 @@ footer {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1pt;
-    font-family: 'DFGuYinMedium-B5';
+    font-family: 'gooin', 'Helvetica', 'Microsoft JhengHei';
     font-size: 2em;
     letter-spacing: 10px;
     margin: 30px 0;
@@ -324,14 +332,12 @@ footer {
     text-align: center;
     margin: auto;
     text-transform: lowercase;
-    font-family: 'DFGuYinMedium-B5';
+    font-family: 'gooin', 'Helvetica', 'Microsoft JhengHei';
     font-weight: 900;
-    font-size: 1.4em;
+    font-size: 1.2em;
     letter-spacing: 8px;
-    line-height: 40px;
     width: 100%;
     display: none;
-    padding: 5px 5%;
     margin: 10px 0;
     box-sizing: border-box;
     color: red;
@@ -381,5 +387,5 @@ footer {
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'DFGuYinMedium-B5';
+    font-family: 'gooin', 'Helvetica', 'Microsoft JhengHei';
 }

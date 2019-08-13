@@ -58,9 +58,9 @@ function typeEffect(element, speed) {
 // application
 var speed = 75;
 var h1 = document.querySelector('h1');
-var p = document.querySelector('p');
+var p = document.querySelector('#centeralign>p');
 var delay = h1.innerHTML.length * speed + speed;
-var pAll = document.querySelectorAll('p');
+var pAll = document.querySelectorAll('#centeralign>p');
 var pDelay = 0;
 // type affect to header
 typeEffect(h1, speed);
