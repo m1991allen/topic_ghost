@@ -175,9 +175,10 @@ a {
 }
 
 .area h2 {
-    padding: 5px 10px;
     cursor: pointer;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
 .area p {
@@ -438,6 +439,10 @@ canvas {
     100% {
         transform: scale(1);
     }
+}
+
+#title_img_1, #title_img_2, #title_img_3, #title_img_4, #title_img_5, #title_img_6, #title_img_7, #title_img_8 {
+    display: none;
 }
 
 /* footer */
