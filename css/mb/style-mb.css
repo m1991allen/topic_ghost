@@ -276,6 +276,13 @@ figcaption {
     filter: grayscale(0%);
 }
 
+.content {
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 55vh;
+}
+
 /* --end ghost script-- */
 
 /* footer */
