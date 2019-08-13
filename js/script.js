@@ -38,7 +38,7 @@ $(document).ready(function () {
         $('#area1>p').show();
         $('#area1>.ghost_img').show();
         $('.set').hide();
-        $('#title_img_1').show('slow')
+        $('#title_img_1').show();
         $(this).addClass('z_index');
     });
 
@@ -46,7 +46,7 @@ $(document).ready(function () {
         $('#area2>p').show();
         $('#area2>.ghost_img').show();
         $('.set').hide();
-        $('#title_img_2').show('slow')
+        $('#title_img_2').show();
         $(this).addClass('z_index');
     });
 
@@ -54,7 +54,7 @@ $(document).ready(function () {
         $('#area3>p').show();
         $('#area3>.ghost_img').show();
         $('.set').hide();
-        $('#title_img_3').show('slow')
+        $('#title_img_3').show();
         $(this).addClass('z_index');
     });
 
@@ -62,7 +62,7 @@ $(document).ready(function () {
         $('#area4>p').show();
         $('#area4>.ghost_img').show();
         $('.set').hide();
-        $('#title_img_4').show('slow')
+        $('#title_img_4').show();
         $(this).addClass('z_index');
     });
 
@@ -70,7 +70,7 @@ $(document).ready(function () {
         $('#area5>p').show();
         $('#area5>.ghost_img').show();
         $('.set').hide();
-        $('#title_img_5').show('slow')
+        $('#title_img_5').show();
         $(this).addClass('z_index');
     });
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
         $('#area6>p').show();
         $('#area6>.ghost_img').show();
         $('.set').hide();
-        $('#title_img_6').show('slow')
+        $('#title_img_6').show();
         $(this).addClass('z_index');
     });
 
@@ -86,7 +86,7 @@ $(document).ready(function () {
         $('#area7>p').show();
         $('#area7>.ghost_img').show();
         $('.set').hide();
-        $('#title_img_7').show('slow')
+        $('#title_img_7').show();
         $(this).addClass('z_index');
     });
 
@@ -94,7 +94,7 @@ $(document).ready(function () {
         $('#area8>p').show();
         $('#area8>.ghost_img').show();
         $('.set').hide();
-        $('#title_img_8').show('slow')
+        $('#title_img_8').show();
         $(this).addClass('z_index');
     });
 

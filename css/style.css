@@ -10,7 +10,7 @@
     url('../fonts/TAK00BP.TTF') format('truetype'), /* Safari, Android, iOS */
     url('../fonts/TAK00BP.svg#svgFontName') format('svg');
     /* Legacy iOS */
-    unicode-range: U+731B, U+9B3C, U+5728, U+9694, U+58C1, U+8FB2, U+66C6, U+4E03, U+6708, U+5728, U+53F0, U+7063, U+4E5F, U+7A31, U+4F5C, U+300C, U+9B3C, U+6708, U+300D, U+4E0D, U+5C11, U+4EBA, U+6703, U+8D81, U+6B64, U+6642, U+5230, U+9B3C, U+5C4B, U+63A2, U+96AA, U+6311, U+6230, U+7981, U+5FCC, U+6C11, U+8996, U+65B0, U+805E, U+7279, U+5730, U+6574, U+7406, U+5168, U+53F0, U+516B, U+5927, U+9748, U+7570, U+9B3C, U+5C4B, U+8B93, U+5927, U+81BD, U+7684, U+6C11, U+773E, U+524D, U+5F80, U+8A66, U+81BD;
+    unicode-range: U+731B, U+9B3C, U+5728, U+9694, U+58C1, U+8FB2, U+66C6, U+4E03, U+6708, U+5728, U+53F0, U+7063, U+4E5F, U+7A31, U+4F5C, U+300C, U+9B3C, U+6708, U+300D, U+4E0D, U+5C11, U+4EBA, U+6703, U+8D81, U+6B64, U+6642, U+5230, U+9B3C, U+5C4B, U+63A2, U+96AA, U+6311, U+6230, U+7981, U+5FCC, U+6C11, U+8996, U+65B0, U+805E, U+7279, U+5730, U+6574, U+7406, U+5168, U+53F0, U+516B, U+5927, U+9748, U+7570, U+9B3C, U+5C4B, U+8B93, U+5927, U+81BD, U+7684, U+6C11, U+773E, U+524D, U+5F80, U+8A66, U+81BD, U+6587, U+5316, U+5927, U+5B78, U+9326, U+65B0, U+5927, U+6A13, U+885B, U+723E, U+5EB7, U+897F, U+9910, U+5EF3, U+6D2A, U+82E5, U+6F6D, U+547D, U+6848, U+6C11, U+96C4, U+9B3C, U+5C4B, U+674F, U+6797, U+91AB, U+9662, U+82B1, U+5D17, U+77F3, U+91AB, U+9662, U+82B1, U+84EE, U+4E94, U+5B50, U+547D, U+6848, U+4F4D, U+7F6E, U+4E0D, U+9650, U+6B61, U+8FCE, U+4E0A, U+8239, U+52C7, U+6562, U+9032, U+5165;
 }
 
 * {
@@ -166,7 +166,6 @@ a {
 
 .area {
     color: white;
-    border: 1px solid;
     border-radius: 5px;
     text-align: center;
     background: #131313c9;
@@ -179,6 +178,15 @@ a {
     white-space: nowrap;
     display: flex;
     align-items: center;
+    padding: 5px 10px;
+    font-size: 2em;
+    font-family: 'gooin', 'Helvetica', 'Microsoft JhengHei';
+}
+
+.area .subtitle {
+    margin: auto;
+    color: red;
+    font-family: 'gooin', 'Helvetica', 'Microsoft JhengHei';
 }
 
 .area p {
@@ -186,6 +194,13 @@ a {
     text-align: left;
     display: none;
     transition-duration: .5s;
+}
+
+.area .subtitle {
+    text-align: center;
+    font-size: 1.6em;
+    color: red;
+    font-family: 'gooin', 'Helvetica', 'Microsoft JhengHei';
 }
 
 .area p:nth-last-child(1) {
@@ -441,6 +456,10 @@ canvas {
     }
 }
 
+.title_img {
+    display: inline-flex;
+}
+
 #title_img_1, #title_img_2, #title_img_3, #title_img_4, #title_img_5, #title_img_6, #title_img_7, #title_img_8 {
     display: none;
 }
@@ -494,7 +513,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1pt;
     font-family: 'gooin', 'Helvetica', 'Microsoft JhengHei';
-    font-size: 3.6em;
+    font-size: 4.8em;
     letter-spacing: 10px;
     margin-bottom: 30px;
     color: red;
