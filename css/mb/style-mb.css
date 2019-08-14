@@ -401,3 +401,7 @@ footer {
     transform: translateX(-50%);
     font-family: 'gooin', 'Helvetica', 'Microsoft JhengHei';
 }
+
+.overflow {
+    overflow: hidden;
+}

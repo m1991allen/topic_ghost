@@ -26,9 +26,14 @@ $(document).ready(function () {
         $('#area8').show('slow');
     });
 
+    $('.house').click(function () {
+        $('body').toggleClass('overflow')
+    })
+
     //close
     $('.close').click(function () {
         $('.area,.area_title').hide();
+        $('body').toggleClass('overflow')
     })
     $('#close').click(function () {
         $('.area_title').hide();
