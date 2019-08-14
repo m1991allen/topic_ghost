@@ -80,3 +80,5 @@ setTimeout(function () {
         pDelay = pDelay + p.innerHTML.length * speed + speed;
     });
 }, delay);
+
+

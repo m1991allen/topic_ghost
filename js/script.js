@@ -1,7 +1,4 @@
 $(document).ready(function () {
-    // 載入圖片
-
-
     // 滑動錨點
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

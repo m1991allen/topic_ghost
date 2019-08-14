@@ -164,7 +164,6 @@
                                         <img alt="ghost" src="./img/4_img/d.jpg" />
                                         <img alt="ghost" src="./img/4_img/e.jpg" />
                                         <img alt="ghost" src="./img/4_img/f.jpg" />
-                                        <img alt="ghost" src="./img/4_img/g.jpg" />
                                 </div>
                         </section>
                         <i class="fas fa-times-circle fa-2x close"></i>
@@ -188,6 +187,7 @@
                                         <img alt="圖片來源：鬼故事夜遊團" src="./img/5_img/c.jpg" />
                                         <img alt="圖片來源：鬼故事夜遊團" src="./img/5_img/d.jpg" />
                                 </div>
+                                <p>圖片來源：鬼故事夜遊團</p>
                         </section>
                         <i class="fas fa-times-circle fa-2x close"></i>
                 </div>
@@ -214,6 +214,7 @@
                                         <img alt="圖片來源：鬼故事夜遊團" src="./img/6_img/d.jpg" />
                                         <img alt="圖片來源：鬼故事夜遊團" src="./img/6_img/e.jpg" />
                                 </div>
+                                <p>圖片來源：鬼故事夜遊團</p>
                         </section>
                         <i class="fas fa-times-circle fa-2x close"></i>
                 </div>
@@ -243,6 +244,7 @@
                                         <img alt="ghost" src="./img/7_img/h.jpg" />
                                         <img alt="ghost" src="./img/7_img/i.jpg" />
                                 </div>
+                                <p>圖片來源：鬼故事夜遊團</p>
                         </section>
                         <i class="fas fa-times-circle fa-2x close"></i>
                 </div>
@@ -298,14 +300,18 @@
                                 </div>
                         </div>
                 </footer>
+
                 <!-- jq CDN -->
                 <script src="https://code.jquery.com/jquery-3.4.1.js"
                         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
                         crossorigin="anonymous"></script>
-
                 <!-- imgpreload -->
-                <script
-                        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+                <script type="text/javascript"
+                        src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+                <script type="text/javascript" src="js/jquery.preload.min.js"></script>
+                <script>
+                        $.preload('img/1_img/a.jpg', 'img/1_img/b.jpg', 'img/1_img/c.jpg', 'img/1_img/d.jpg', 'img/1_img/e.jpg', 'img/1_img/f.jpg', 'img/2_img/a.jpg', 'img/2_img/b.jpg', 'img/2_img/c.jpg', 'img/2_img/d.jpg', 'img/2_img/e.jpg', 'img/2_img/f.jpg', 'img/3_img/a.jpg', 'img/3_img/b.jpg', 'img/3_img/c.jpg', 'img/3_img/d.jpg', 'img/3_img/e.jpg', 'img/4_img/a.jpg', 'img/4_img/b.jpg', 'img/4_img/c.jpg', 'img/4_img/d.jpg', 'img/4_img/e.jpg', 'img/4_img/f.jpg', 'img/5_img/a.jpg', 'img/5_img/b.jpg', 'img/5_img/c.jpg', 'img/5_img/d.jpg', 'img/6_img/a.jpg', 'img/6_img/b.jpg', 'img/6_img/c.jpg', 'img/6_img/d.jpg', 'img/6_img/e.jpg', 'img/7_img/a.jpg', 'img/7_img/b.jpg', 'img/7_img/c.jpg', 'img/7_img/d.jpg', 'img/7_img/e.jpg', 'img/7_img/f.jpg', 'img/7_img/g.jpg', 'img/7_img/h.jpg', 'img/7_img/i.jpg', 'img/8_img/a.jpg', 'img/8_img/b.jpg', 'img/8_img/c.jpg', 'img/8_img/d.jpg', 'img/8_img/e.jpg', 'img/8_img/f.jpg', 'img/8_img/g.jpg', 'img/8_img/h.jpg', 'img/8_img/i.jpg');
+                </script>
                 <!-- fancybox -->
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
                 <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
