@@ -70,7 +70,7 @@ a {
     opacity: .9;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768) {
     .ghost {
         display: none;
     }
@@ -203,33 +203,32 @@ a {
 }
 
 .area:hover .set {
-    transform: scale(1.5);
     cursor: pointer;
 }
 
 #area1 {
-    top: 4%;
+    top: 2%;
     left: 66%;
 }
 
 #area2 {
-    top: 10%;
-    left: 60%;
+    top: 7%;
+    left: 56%;
 }
 
 #area3 {
-    top: 16%;
-    left: 50%;
+    top: 15%;
+    left: 43%;
 }
 
 #area4 {
     top: 34%;
-    left: 45%;
+    left: 38%;
 }
 
 #area5 {
     top: 50%;
-    left: 44%;
+    left: 40%;
 }
 
 #area6 {
@@ -238,13 +237,83 @@ a {
 }
 
 #area7 {
-    top: 27%;
+    top: 20%;
     left: 17%;
 }
 
 #area8 {
     top: 40%;
     left: 60%;
+}
+
+@media screen and (max-width:1366px) {
+    #area1 {
+        top: 2%;
+        left: 70%;
+    }
+    #area2 {
+        top: 7%;
+        left: 60%;
+    }
+    #area3 {
+        top: 15%;
+        left: 47%;
+    }
+    #area4 {
+        top: 30%;
+        left: 40%;
+    }
+    #area5 {
+        top: 50%;
+        left: 40%;
+    }
+    #area6 {
+        top: 63%;
+        left: 49%;
+    }
+    #area7 {
+        top: 20%;
+        left: 10%;
+    }
+    #area8 {
+        top: 40%;
+        left: 60%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #area1 {
+        top: 0%;
+        left: 73%;
+    }
+    #area2 {
+        top: 5%;
+        left: 60%;
+    }
+    #area3 {
+        top: 15%;
+        left: 45%;
+    }
+    #area4 {
+        top: 30%;
+        left: 40%;
+    }
+    #area5 {
+        top: 50%;
+        left: 40%;
+    }
+    #area6 {
+        top: 63%;
+        left: 49%;
+    }
+    #area7 {
+        top: 20%;
+        left: 5%;
+    }
+    #area8 {
+        top: 40%;
+        left: 60%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -273,8 +342,8 @@ a {
         left: 49%;
     }
     #area7 {
-        top: 30%;
-        left: 10%;
+        top: 20%;
+        left: 5%;
     }
     #area8 {
         top: 48%;
@@ -320,6 +389,7 @@ a {
 }
 
 .set {
+    display: inline;
     position: absolute;
     transition: .3s;
     -webkit-filter: drop-shadow(0px 0px 26px rgba(45, 67, 165, 0.8));
@@ -405,11 +475,11 @@ canvas {
     box-shadow: 3px 2px 6px black;
 }
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:1000px) {
     .area .set {
         display: none;
     }
-}
+} */
 
 #scale1 {
     animation: scale 1.3s infinite;

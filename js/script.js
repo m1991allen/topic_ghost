@@ -37,7 +37,7 @@ $(document).ready(function () {
     $('#area1').click(function () {
         $('#area1>p').show();
         $('#area1>.ghost_img').show();
-        $('.set').hide();
+        $('.set').css('display', 'none');
         $('#title_img_1').show();
         $(this).addClass('z_index');
     });
@@ -45,7 +45,7 @@ $(document).ready(function () {
     $('#area2').click(function () {
         $('#area2>p').show();
         $('#area2>.ghost_img').show();
-        $('.set').hide();
+        $('.set').css('display', 'none');
         $('#title_img_2').show();
         $(this).addClass('z_index');
     });
@@ -53,7 +53,7 @@ $(document).ready(function () {
     $('#area3').click(function () {
         $('#area3>p').show();
         $('#area3>.ghost_img').show();
-        $('.set').hide();
+        $('.set').css('display', 'none');
         $('#title_img_3').show();
         $(this).addClass('z_index');
     });
@@ -61,7 +61,7 @@ $(document).ready(function () {
     $('#area4').click(function () {
         $('#area4>p').show();
         $('#area4>.ghost_img').show();
-        $('.set').hide();
+        $('.set').css('display', 'none');
         $('#title_img_4').show();
         $(this).addClass('z_index');
     });
@@ -69,7 +69,7 @@ $(document).ready(function () {
     $('#area5').click(function () {
         $('#area5>p').show();
         $('#area5>.ghost_img').show();
-        $('.set').hide();
+        $('.set').css('display', 'none');
         $('#title_img_5').show();
         $(this).addClass('z_index');
     });
@@ -77,7 +77,7 @@ $(document).ready(function () {
     $('#area6').click(function () {
         $('#area6>p').show();
         $('#area6>.ghost_img').show();
-        $('.set').hide();
+        $('.set').css('display', 'none');
         $('#title_img_6').show();
         $(this).addClass('z_index');
     });
@@ -85,7 +85,7 @@ $(document).ready(function () {
     $('#area7').click(function () {
         $('#area7>p').show();
         $('#area7>.ghost_img').show();
-        $('.set').hide();
+        $('.set').css('display', 'none');
         $('#title_img_7').show();
         $(this).addClass('z_index');
     });
@@ -93,7 +93,7 @@ $(document).ready(function () {
     $('#area8').click(function () {
         $('#area8>p').show();
         $('#area8>.ghost_img').show();
-        $('.set').hide();
+
         $('#title_img_8').show();
         $(this).addClass('z_index');
     });
@@ -105,7 +105,7 @@ $(document).ready(function () {
     $('#mask').click(function () {
         $('#mask').css('display', 'none');
         $('.area>p, .ghost_img, #title_img_1, #title_img_2, #title_img_3, #title_img_4, #title_img_5, #title_img_6, #title_img_7, #title_img_8').hide();
-        $('.set').show();
+        $('.set').css('display', 'inline');
         $('.area').removeClass('z_index');
     })
 
@@ -256,35 +256,6 @@ $(document).ready(function () {
         requestAnimationFrame(draw);
 
     }
-    // var thunderBtn = document.getElementById("thunder");
-    // var rainBtn = document.getElementById("rain");
-
-    // thunderBtn.addEventListener("click", function () {
-    //     document.body.className = "thunder-now";
-    //     setTimeout(function () {
-    //         document.body.className = "";
-    //     }, 1000);
-    // }, false);
-
-    // rainBtn.addEventListener("click", function () {
-    //     document.body.className = "rain-pause";
-    //     setTimeout(function () {
-    //         document.body.className = "";
-    //     }, 1000);
-    // }, false);
-
-    // // 下雨音效
-    // // 使用web audio API
-    // var audio_file = new Audio('./resource/rain.mp3');
-    // audio_file.play();
-    // audio_file.addEventListener('timeupdate', function () {
-    //     var buffer = 4.2;
-    //     if (this.currentTime > this.duration - buffer) {
-    //         this.currentTime = 0;
-    //         this.play();
-    //     }
-    // }, false);
-
 })
 
 
