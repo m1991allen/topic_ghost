@@ -93,7 +93,7 @@ $(document).ready(function () {
     $('#area8').click(function () {
         $('#area8>p').show();
         $('#area8>.ghost_img').show();
-
+        $('.set').css('display', 'none');
         $('#title_img_8').show();
         $(this).addClass('z_index');
     });

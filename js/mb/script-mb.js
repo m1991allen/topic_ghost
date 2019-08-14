@@ -27,13 +27,13 @@ $(document).ready(function () {
     });
 
     $('.house').click(function () {
-        $('body').toggleClass('overflow')
+        $('html').toggleClass('overflow')
     })
 
     //close
     $('.close').click(function () {
         $('.area,.area_title').hide();
-        $('body').toggleClass('overflow')
+        $('html').toggleClass('overflow')
     })
     $('#close').click(function () {
         $('.area_title').hide();
