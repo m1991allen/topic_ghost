@@ -76,6 +76,21 @@ figcaption {
 
 /* --end fb social-- */
 
+/* line social */
+
+iframe.line-it-button {
+    width: 50px !important;
+    height: 50px !important;
+    right: 40px !important;
+    bottom: 30px !important;
+    z-index: 10000 !important;
+    position: fixed;
+    box-shadow: 4px 5px 4px #070c0e;
+    cursor: pointer;
+}
+
+/* --end line social-- */
+
 /* map */
 
 .section figure {

@@ -10,7 +10,7 @@
         <meta property="og:locale" content="zh_TW" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.ftvnews.com.tw/topic/ghost/index.html" />
-        <meta property="og:image" content="https://www.ftvnews.com.tw/topic/ghost/img/cover.jpg" />
+        <meta property="og:image" content="https://www.ftvnews.com.tw/topic/ghost/img/social_cover.jpg" />
         <meta property="og:image:width" content="563" />
         <meta property="og:image:height" content="296" />
         <meta property="og:description" content="農曆七月在台灣也俗稱「鬼月」，許多人會趁此時挑戰禁忌，民視新聞在中元節也特地獻上「全台八大靈異鬼屋」整理，讓大膽的民眾前往試膽..." />
@@ -29,6 +29,29 @@
                 gtag('js', new Date());
 
                 gtag('config', 'UA-101119806-1');
+        </script>
+        <script>
+                var URL = document.location.toString();
+                var useragent = navigator.userAgent;
+                useragent = useragent.toLowerCase();
+
+                if (useragent.indexOf('iphone') != -1) location.replace("https://www.ftvnews.com.tw/topic/ghost/m.index.html");//iphone
+                else if (useragent.indexOf('ipad') != -1 || useragent.indexOf('ipod') != -1) location.replace("https://www.ftvnews.com.tw/topic/ghost/index.html");//ipad
+                else if (useragent.indexOf('android') != -1) {
+                        if (ConsiderLimits()) {
+                                location.replace("https://www.ftvnews.com.tw/topic/ghost/index.html"); // android pad
+                        } else {
+                                location.replace("https://www.ftvnews.com.tw/topic/ghost/m.index.html"); // android phone
+                        }
+                } else {
+                        location.replace("https://www.ftvnews.com.tw/topic/ghost/index.html"); // PC
+                }
+
+                function ConsiderLimits() {
+                        if (screen.width >= 1024 && screen.height >= 600)
+                                return 1;
+                        return 0;
+                }
         </script>
 </head>
 
@@ -297,6 +320,7 @@
                                                 <p>視覺設計｜倪韡秦</p>
                                                 <p>網頁設計｜劉凱倫</p>
                                                 <p>編輯校對｜黃嘉儀</p>
+                                                <p>特別感謝｜鬼故事夜遊團</p>
                                         </div>
                                 </div>
                                 <div class="fb_search">
