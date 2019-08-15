@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-news/0.9 http://www.google.com/schemas/sitemap-news/0.9/sitemap-news.xsd">
+  <url>
+    <loc>https://www.ftvnews.com.tw/topic/ghost/index.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>民視新聞網</news:name>
+        <news:language>zh-tw</news:language>
+      </news:publication>
+      <news:genres>PressRelease</news:genres>
+      <news:publication_date>2019-08-15</news:publication_date>
+      <news:title>鬼月專題／猛鬼在隔壁！精選全台八大靈異鬼屋，你去過哪些？-民視新聞</news:title>
+      <news:keywords>農曆 七月 鬼月 挑戰 禁忌 民視新聞 中元節 全台 台灣 靈異 鬼屋 大膽 試膽 恐怖 </news:keywords>
+      <news:stock_tickers />
+    </news:news>
+  </url>
+</urlset>
