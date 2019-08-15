@@ -296,3 +296,10 @@ setTimeout(function () {
         pDelay = pDelay + p.innerHTML.length * speed + speed;
     });
 }, delay);
+
+
+//music btn
+
+$('#music').click(function () {
+    $('#music_btn').toggleClass('fa-volume-up fa-volume-mute');
+})
