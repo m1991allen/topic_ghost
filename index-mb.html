@@ -33,6 +33,10 @@
 </head>
 
 <body>
+        <!-- rain.mp3 -->
+        <audio src="resource/rain.mp3" id="rain" preload="auto" loop></audio>
+        <!-- music btn -->
+        <div id="music" onclick="playSound()"><i class="fas fa-volume-mute fa-2x" id="music_btn"></i></div>
         <!-- fb social -->
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous"
@@ -301,24 +305,31 @@
                                 </div>
                         </div>
                 </footer>
+        </div>
 
-                <!-- jq CDN -->
-                <script src="https://code.jquery.com/jquery-3.4.1.js"
-                        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-                        crossorigin="anonymous"></script>
-                <!-- imgpreload -->
-                <script type="text/javascript"
-                        src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-                <script type="text/javascript" src="js/jquery.preload.min.js"></script>
-                <script>
-                        $.preload('img/1_img/a.jpg', 'img/1_img/b.jpg', 'img/1_img/c.jpg', 'img/1_img/d.jpg', 'img/1_img/e.jpg', 'img/1_img/f.jpg', 'img/2_img/a.jpg', 'img/2_img/b.jpg', 'img/2_img/c.jpg', 'img/2_img/d.jpg', 'img/2_img/e.jpg', 'img/2_img/f.jpg', 'img/3_img/a.jpg', 'img/3_img/b.jpg', 'img/3_img/c.jpg', 'img/3_img/d.jpg', 'img/3_img/e.jpg', 'img/4_img/a.jpg', 'img/4_img/b.jpg', 'img/4_img/c.jpg', 'img/4_img/d.jpg', 'img/4_img/e.jpg', 'img/4_img/f.jpg', 'img/5_img/a.jpg', 'img/5_img/b.jpg', 'img/5_img/c.jpg', 'img/5_img/d.jpg', 'img/6_img/a.jpg', 'img/6_img/b.jpg', 'img/6_img/c.jpg', 'img/6_img/d.jpg', 'img/6_img/e.jpg', 'img/7_img/a.jpg', 'img/7_img/b.jpg', 'img/7_img/c.jpg', 'img/7_img/d.jpg', 'img/7_img/e.jpg', 'img/7_img/f.jpg', 'img/7_img/g.jpg', 'img/7_img/h.jpg', 'img/7_img/i.jpg', 'img/8_img/a.jpg', 'img/8_img/b.jpg', 'img/8_img/c.jpg', 'img/8_img/d.jpg', 'img/8_img/e.jpg', 'img/8_img/f.jpg', 'img/8_img/g.jpg', 'img/8_img/h.jpg', 'img/8_img/i.jpg');
-                </script>
-                <!-- fancybox -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-                <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
-                <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" media="screen" />
-                <!-- my-script -->
-                <script src="js/mb/script-mb.js"></script>
+        <!-- jq CDN -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <!-- imgpreload -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.preload.min.js"></script>
+        <script>
+                $.preload('img/1_img/a.jpg', 'img/1_img/b.jpg', 'img/1_img/c.jpg', 'img/1_img/d.jpg', 'img/1_img/e.jpg', 'img/1_img/f.jpg', 'img/2_img/a.jpg', 'img/2_img/b.jpg', 'img/2_img/c.jpg', 'img/2_img/d.jpg', 'img/2_img/e.jpg', 'img/2_img/f.jpg', 'img/3_img/a.jpg', 'img/3_img/b.jpg', 'img/3_img/c.jpg', 'img/3_img/d.jpg', 'img/3_img/e.jpg', 'img/4_img/a.jpg', 'img/4_img/b.jpg', 'img/4_img/c.jpg', 'img/4_img/d.jpg', 'img/4_img/e.jpg', 'img/4_img/f.jpg', 'img/5_img/a.jpg', 'img/5_img/b.jpg', 'img/5_img/c.jpg', 'img/5_img/d.jpg', 'img/6_img/a.jpg', 'img/6_img/b.jpg', 'img/6_img/c.jpg', 'img/6_img/d.jpg', 'img/6_img/e.jpg', 'img/7_img/a.jpg', 'img/7_img/b.jpg', 'img/7_img/c.jpg', 'img/7_img/d.jpg', 'img/7_img/e.jpg', 'img/7_img/f.jpg', 'img/7_img/g.jpg', 'img/7_img/h.jpg', 'img/7_img/i.jpg', 'img/8_img/a.jpg', 'img/8_img/b.jpg', 'img/8_img/c.jpg', 'img/8_img/d.jpg', 'img/8_img/e.jpg', 'img/8_img/f.jpg', 'img/8_img/g.jpg', 'img/8_img/h.jpg', 'img/8_img/i.jpg');
+        </script>
+        <!-- fancybox -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
+        <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" media="screen" />
+        <!-- music btn -->
+        <script>
+                var myAudio = document.getElementById("rain");
+
+                function playSound() {
+                        return myAudio.paused ? myAudio.play() : myAudio.pause();
+                };
+        </script>
+        <!-- my-script -->
+        <script src="js/mb/script-mb.js"></script>
 </body>
 
 </html>

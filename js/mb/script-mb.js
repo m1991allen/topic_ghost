@@ -82,3 +82,6 @@ setTimeout(function () {
 }, delay);
 
 
+$('#music').click(function () {
+    $('#music_btn').toggleClass('fa-volume-up fa-volume-mute');
+})
