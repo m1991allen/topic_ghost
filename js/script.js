@@ -30,7 +30,6 @@ $(document).ready(function () {
         div.style.left = x + 30 + 'px';
 
         div.style.top = y + 30 + 'px';
-
     }
 
     //點擊地點顯示故事
